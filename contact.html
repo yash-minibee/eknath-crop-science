@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Eknath Crop Science | Get In Touch</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/image/logo.jpg" alt="Eknath Logo" class="logo-nav">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#quick-intro">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTACT HERO SECTION ==================== -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content fade-in-down">
+                <h1 class="floating-element">Get In Touch</h1>
+                <p class="fade-in-up" style="animation-delay: 0.3s;">
+                    Ready to transform your agricultural success? We're here to help you choose the perfect solutions
+                    for your farming needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT FORM SECTION ==================== -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-card fade-in-up">
+                        <div class="text-center mb-4">
+                            <h2 class="section-title">Send Us a Message</h2>
+                            <p class="section-subtitle">Fill out the form below and we'll get back to you within 24
+                                hours</p>
+                        </div>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating fade-in-left" style="animation-delay: 0.2s;">
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="First Name" required>
+                                        <label for="firstName"><i class="fas fa-user me-2"></i>First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating fade-in-right" style="animation-delay: 0.2s;">
+                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                            placeholder="Last Name" required>
+                                        <label for="lastName"><i class="fas fa-user me-2"></i>Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-floating fade-in-left" style="animation-delay: 0.4s;">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email Address" required>
+                                        <label for="email"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating fade-in-right" style="animation-delay: 0.4s;">
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone Number">
+                                        <label for="phone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating fade-in-up" style="animation-delay: 0.8s;">
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message"
+                                    style="height: 150px;" required></textarea>
+                                <label for="message"><i class="fas fa-comment me-2"></i>Your Message</label>
+                            </div>
+
+                            <div class="text-center fade-in-up" style="animation-delay: 1s;">
+                                <button type="submit" class="contact-submit-btn">
+                                    <span class="loading-spinner"></span>
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    <span class="btn-text">Send Message</span>
+                                </button>
+                            </div>
+
+                            <div class="success-message">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Thank you! Your message has been sent successfully. We'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT INFO SECTION ==================== -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center fade-in-down">
+                    <h2 class="section-title">Contact Information</h2>
+                    <p class="section-subtitle">Multiple ways to reach us for your convenience</p>
+                </div>
+            </div>
+
+            <!-- Contact Information Cards - 3 Card Layout -->
+            <div class="row g-4 justify-content-center">
+                <!-- Combined Call & WhatsApp Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <a href="https://wa.me/918141061247" target="_blank" class="card-link">
+                        <div class="contact-info-card primary-contact-card phone-whatsapp-card">
+                            <div class="contact-info-icon primary-icon whatsapp-icon-bg">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 class="contact-info-title primary-title">Call or Chat</h3>
+                            <p class="contact-info-text">Speak directly with our agricultural experts or chat instantly</p>
+                            <div class="contact-details">
+                                <a href="tel:+918141061247" class="contact-info-link primary-link" onclick="event.stopPropagation();">
+                                    <i class="fas fa-phone me-2"></i>+91 81410 61247
+                                </a>
+                                <a href="https://wa.me/918141061247" class="contact-info-link primary-link whatsapp-link" target="_blank" onclick="event.stopPropagation();">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp Chat
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="mailto:eknathcropscience@gmail.com" class="card-link">
+                        <div class="contact-info-card primary-contact-card email-card">
+                            <div class="contact-info-icon primary-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-info-title primary-title">Email Us</h3>
+                            <p class="contact-info-text">Send us your detailed inquiries and we'll respond within 24 hours</p>
+                            <div class="contact-details">
+                                <a href="mailto:eknathcropscience@gmail.com" class="contact-info-link primary-link" onclick="event.stopPropagation();">
+                                    <i class="fas fa-envelope me-2"></i>eknathcropscience@gmail.com
+                                </a>
+                                <div class="contact-hours">
+                                    <i class="fas fa-reply me-2"></i>
+                                    <span>Response within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Location Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="#map" class="card-link">
+                        <div class="contact-info-card primary-contact-card location-card">
+                            <div class="contact-info-icon primary-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="contact-info-title primary-title">Visit Our Office</h3>
+                            <p class="contact-info-text">Come for personalized agricultural consultations</p>
+                            <div class="contact-details">
+                                <div class="address-info">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span>Plot No. 4, Shreenathji Estate<br>Sabalpur Chowkdi<br>Junagadh - 362037</span>
+                                </div>
+                                <a href="#map" class="contact-info-link primary-link" onclick="event.stopPropagation();">
+                                    <i class="fas fa-directions me-2"></i>Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Contact Actions -->
+            <div class="row mt-5">
+                <div class="col-12 text-center fade-in-up" style="animation-delay: 1.2s;">
+                    <div class="quick-contact-actions">
+                        <h5 class="quick-contact-title">Need Immediate Assistance?</h5>
+                        <div class="quick-contact-buttons">
+                            <a href="tel:+918141061247" class="btn btn-primary btn-lg me-3 mb-2">
+                                <i class="fas fa-phone me-2"></i>Call Now
+                            </a>
+                            <a href="https://wa.me/918141061247" class="btn btn-success btn-lg me-3 mb-2"
+                                target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                            </a>
+                            <a href="mailto:eknathcropscience@gmail.com" class="btn btn-outline-primary btn-lg mb-2">
+                                <i class="fas fa-envelope me-2"></i>Send Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MAP SECTION ==================== -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center fade-in-down">
+                    <h2 class="section-title">Find Our Location</h2>
+                    <p class="section-subtitle">Visit our office for personalized agricultural consultations</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 fade-in-up">
+                    <div class="map-container">
+                        <iframe class="map-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.234567890123!2d70.4567890123456!3d21.5234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDMxJzI0LjQiTiA3MMKwMjcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer bg-dark-green text-light py-5">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4">
+                <!-- Company Info Column -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <!-- Company Logo and Brand -->
+                        <div class="footer-logo mb-3">
+                            <img src="assets/image/logo.jpg" alt="Eknath Crop Science" class="footer-logo-img">
+                            <h5 class="footer-brand-name">Eknath Crop Science</h5>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="footer-contact-info">
+                            <div class="contact-item mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Plot No. 4, Shreenathji Estate, Sabalpur Chowkdi, Junagadh - 362037</span>
+                            </div>
+                            <div class="contact-item mb-2">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+91 81410 61247</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>eknathcropscience@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="footer-social-section">
+                            <h6 class="footer-social-title">Follow Us</h6>
+                            <div class="footer-social-links">
+                                <a href="#" class="social-link me-2" title="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link me-2" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link me-2" title="LinkedIn"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link me-2" title="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link me-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="footer-title">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#quick-intro">About Us</a></li>
+                            <li><a href="index.html#about-us">Our Vision</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Products Column -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="footer-title">Our Products</h6>
+                        <ul class="footer-links">
+                            <li><a href="#npk">NPK Fertilizers</a></li>
+                            <li><a href="#micronutrients">Micronutrients</a></li>
+                            <li><a href="#wsf">Water Soluble Fertilizers</a></li>
+                            <li><a href="#organic">Organic Products</a></li>
+                            <li><a href="#biopesticides">Biopesticides</a></li>
+                            <li><a href="#biofungicides">Biofungicides</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="footer-divider my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="footer-copyright mb-0">
+                        &copy; 2024 Eknath Crop Science. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-legal-links">
+                        <a href="#privacy" class="legal-link me-3">Privacy Policy</a>
+                        <a href="#terms" class="legal-link me-3">Terms of Service</a>
+                        <a href="#cookies" class="legal-link">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
