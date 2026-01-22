@@ -588,8 +588,11 @@ const navbar = document.getElementById("mainNavbar");
 const heroSection = document.getElementById("home");
 
 function handleNavbarScroll() {
+    // 🛑 Stop if elements do not exist (important for inner pages)
+    if (!navbar || !heroSection) return;
+
     const heroHeight = heroSection.offsetHeight - 120; // Adjusted for larger navbar
-    
+
     if (window.scrollY < heroHeight) {
         navbar.classList.add("navbar-transparent");
         navbar.classList.remove("navbar-scrolled");
@@ -598,6 +601,13 @@ function handleNavbarScroll() {
         navbar.classList.remove("navbar-transparent");
     }
 }
+
+// ✅ Attach scroll listener ONLY if hero section exists
+if (navbar && heroSection) {
+    window.addEventListener("scroll", handleNavbarScroll);
+    handleNavbarScroll(); // run once on load
+}
+
 
 // Enhanced smooth scroll for navigation links with navbar height adjustment
 function smoothScrollToSection(targetId) {
