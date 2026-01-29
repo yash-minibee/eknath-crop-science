@@ -892,26 +892,12 @@ p {
     transition: transform 0.4s ease;
 }
 
-.highlight-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(92, 184, 92, 0.1) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
-}
+
 
 .highlight-card:hover::before {
     transform: scaleX(1);
 }
 
-.highlight-card:hover::after {
-    opacity: 1;
-}
 
 .highlight-card:hover {
     transform: translateY(-15px) scale(1.02);
@@ -1862,7 +1848,7 @@ p {
     }
 
     .footer-logo,
-    .footer-contact-info .contact-item{
+    .footer-contact-info .contact-item {
         justify-content: center;
     }
 
@@ -2403,7 +2389,7 @@ a:focus-visible {
     font-weight: 500;
 }
 
-.form-control:focus + label {
+.form-control:focus+label {
     color: var(--primary-green);
 }
 
@@ -2669,8 +2655,13 @@ a:focus-visible {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Success Message */
@@ -2687,8 +2678,15 @@ a:focus-visible {
 
 /* Floating Animation */
 @keyframes floatSlow {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .floating-element {
@@ -2732,6 +2730,7 @@ a:focus-visible {
         padding: 1.5rem;
     }
 }
+
 /* ==================== ENHANCED CONTACT INFO LAYOUT ==================== */
 
 /* Primary Contact Cards */
@@ -2994,19 +2993,19 @@ a:focus-visible {
         min-height: 280px;
         margin-bottom: 2rem;
     }
-    
+
     .secondary-contact-card {
         padding: 1.5rem;
         min-height: 240px;
         margin-bottom: 1.5rem;
     }
-    
+
     .primary-icon {
         width: 80px;
         height: 80px;
         font-size: 2rem;
     }
-    
+
     .primary-title {
         font-size: 1.4rem;
     }
@@ -3017,26 +3016,26 @@ a:focus-visible {
         padding: 2rem 1.5rem;
         min-height: 250px;
     }
-    
+
     .secondary-contact-card {
         padding: 1.5rem;
         min-height: 220px;
     }
-    
+
     .quick-contact-actions {
         padding: 2rem 1.5rem;
     }
-    
+
     .quick-contact-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .quick-contact-buttons .btn {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .hour-item {
         flex-direction: column;
         align-items: flex-start;
@@ -3049,39 +3048,39 @@ a:focus-visible {
         padding: 1.5rem;
         min-height: 220px;
     }
-    
+
     .secondary-contact-card {
         padding: 1.25rem;
         min-height: 200px;
     }
-    
+
     .primary-icon {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .secondary-icon {
         width: 50px;
         height: 50px;
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
-    
+
     .primary-title {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    
+
     .contact-info-title {
         font-size: 1.1rem;
     }
-    
+
     .quick-contact-title {
         font-size: 1.1rem;
     }
-    
+
     .quick-contact-actions {
         padding: 1.5rem;
     }
@@ -3146,11 +3145,12 @@ a:focus-visible {
         --bs-gutter-x: 1rem;
         --bs-gutter-y: 1rem;
     }
-    
+
     .phone-whatsapp-card .contact-details {
         gap: 0.5rem;
     }
 }
+
 /* ==================== CARD LINK STYLES AND WHATSAPP ICON ==================== */
 
 /* Card Link Wrapper */
@@ -3256,6 +3256,7 @@ html {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -3276,7 +3277,8 @@ html {
     justify-content: center;
     overflow: hidden;
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
-    margin-top: 95px; /* Account for fixed navbar */
+    margin-top: 95px;
+    /* Account for fixed navbar */
 }
 
 /* Product Category Cards */
@@ -3361,9 +3363,23 @@ html {
     animation: float 3s ease-in-out infinite;
 }
 
-.particle-1 { top: 10px; left: 10px; animation-delay: 0s; }
-.particle-2 { top: 30px; left: 30px; animation-delay: 1s; }
-.particle-3 { top: 50px; left: 15px; animation-delay: 2s; }
+.particle-1 {
+    top: 10px;
+    left: 10px;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    top: 30px;
+    left: 30px;
+    animation-delay: 1s;
+}
+
+.particle-3 {
+    top: 50px;
+    left: 15px;
+    animation-delay: 2s;
+}
 
 .organic-elements {
     position: relative;
@@ -3380,9 +3396,23 @@ html {
     animation: organicFloat 4s ease-in-out infinite;
 }
 
-.element-1 { top: 5px; left: 20px; animation-delay: 0s; }
-.element-2 { top: 25px; left: 5px; animation-delay: 1.5s; }
-.element-3 { top: 45px; left: 35px; animation-delay: 3s; }
+.element-1 {
+    top: 5px;
+    left: 20px;
+    animation-delay: 0s;
+}
+
+.element-2 {
+    top: 25px;
+    left: 5px;
+    animation-delay: 1.5s;
+}
+
+.element-3 {
+    top: 45px;
+    left: 35px;
+    animation-delay: 3s;
+}
 
 .blend-layers {
     position: relative;
@@ -3398,18 +3428,46 @@ html {
     animation: layerShift 5s ease-in-out infinite;
 }
 
-.layer-1 { top: 10px; background: var(--light-green); animation-delay: 0s; }
-.layer-2 { top: 30px; background: var(--accent-green); animation-delay: 1.5s; }
-.layer-3 { top: 50px; background: var(--primary-green); animation-delay: 3s; }
+.layer-1 {
+    top: 10px;
+    background: var(--light-green);
+    animation-delay: 0s;
+}
+
+.layer-2 {
+    top: 30px;
+    background: var(--accent-green);
+    animation-delay: 1.5s;
+}
+
+.layer-3 {
+    top: 50px;
+    background: var(--primary-green);
+    animation-delay: 3s;
+}
 
 @keyframes organicFloat {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(180deg); }
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(180deg);
+    }
 }
 
 @keyframes layerShift {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(5px); }
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
 }
 
 /* Product Cards */
@@ -3561,21 +3619,21 @@ html {
         height: 50vh;
         min-height: 300px;
     }
-    
+
     .product-category-card {
         padding: 2rem 1.5rem;
     }
-    
+
     .product-category-icon {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
     }
-    
+
     .product-actions {
         flex-direction: column;
     }
-    
+
     .product-actions .btn {
         width: 100%;
     }
@@ -3585,11 +3643,11 @@ html {
     .product-category-card {
         padding: 1.5rem;
     }
-    
+
     .product-content {
         padding: 1rem;
     }
-    
+
     .product-filter-btn {
         font-size: 0.85rem;
         padding: 0.4rem 1rem;
@@ -3978,14 +4036,30 @@ html {
 }
 
 /* Animation Stagger Effects */
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
+.stagger-1 {
+    animation-delay: 0.1s;
+}
+
+.stagger-2 {
+    animation-delay: 0.2s;
+}
+
+.stagger-3 {
+    animation-delay: 0.3s;
+}
+
+.stagger-4 {
+    animation-delay: 0.4s;
+}
 
 /* Utility Classes */
-.max-w-2xl { max-width: 42rem; }
-.max-w-3xl { max-width: 48rem; }
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -3993,12 +4067,12 @@ html {
         min-height: 50vh;
         padding: 3rem 0;
     }
-    
+
     .products-category-card {
         padding: 1.5rem;
         margin-bottom: 2rem;
     }
-    
+
     .products-feature-card {
         padding: 1.5rem;
         margin-bottom: 2rem;
@@ -4010,21 +4084,21 @@ html {
         min-height: 40vh;
         padding: 2rem 0;
     }
-    
+
     .products-hero-section h1 {
         font-size: 2.5rem;
     }
-    
+
     .products-category-card {
         padding: 1.25rem;
     }
-    
+
     .products-category-icon {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
     }
-    
+
     .products-filter-btn {
         font-size: 0.85rem;
         padding: 0.4rem 1rem;
@@ -4036,15 +4110,15 @@ html {
     .products-hero-section h1 {
         font-size: 2rem;
     }
-    
+
     .products-category-card {
         padding: 1rem;
     }
-    
+
     .products-feature-card {
         padding: 1rem;
     }
-    
+
     .products-feature-icon {
         width: 50px;
         height: 50px;

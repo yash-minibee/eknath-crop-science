@@ -217,9 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <button class="btn btn-product-primary" onclick="showProductDetails(${product.id})">
                             <i class="fas fa-eye me-1"></i>View Details
                         </button>
-                        <button class="btn btn-product-outline" onclick="requestQuote(${product.id})">
-                            <i class="fas fa-envelope me-1"></i>Quote
-                        </button>
                     </div>
                 </div>
             </div>
@@ -336,28 +333,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Show modal
         productModal.show();
-    };
-
-    // Request quote
-    window.requestQuote = function(productId) {
-        const product = products.find(p => p.id === productId);
-        if (!product) return;
-
-        // Create mailto link
-        const subject = `Quote Request for ${product.name}`;
-        const body = `Dear Eknath Crop Science Team,
-
-I am interested in getting a quote for the following product:
-
-Product: ${product.name}
-Category: ${getCategoryName(product.category)}
-
-Please provide pricing and availability information.
-
-Thank you.`;
-
-        const mailtoLink = `mailto:eknathcropscience@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
     };
 
     // Smooth scrolling for anchor links
