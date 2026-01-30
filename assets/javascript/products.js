@@ -304,35 +304,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Show product details in modal
+    // Show product details - redirect to product-details.html page
     window.showProductDetails = function(productId) {
-        const product = products.find(p => p.id === productId);
-        if (!product) return;
-
-        // Update modal content
-        document.getElementById('modalProductName').textContent = product.name;
-        document.getElementById('modalProductDescription').textContent = product.description;
-        document.getElementById('modalProductImage').src = product.image;
-        document.getElementById('modalProductImage').alt = product.name;
-
-        // Update specifications table
-        const specsTable = document.getElementById('modalSpecsTable');
-        specsTable.innerHTML = Object.entries(product.specifications)
-            .map(([key, value]) => `
-                <tr>
-                    <td class="fw-semibold">${key}</td>
-                    <td>${value}</td>
-                </tr>
-            `).join('');
-
-        // Update applications list
-        const applicationsList = document.getElementById('modalApplications');
-        applicationsList.innerHTML = product.applications
-            .map(app => `<li><i class="fas fa-check text-success me-2"></i>${app}</li>`)
-            .join('');
-
-        // Show modal
-        productModal.show();
+        // Redirect to product-details.html with product ID as URL parameter
+        window.location.href = `product-details.html?id=${productId}`;
     };
 
     // Smooth scrolling for anchor links

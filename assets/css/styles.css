@@ -99,14 +99,14 @@ p {
 .navbar {
     padding: 1rem 0;
     transition: var(--transition-smooth);
-    background: var(--primary-green) !important;
+    background: #ffffff !important;
     box-shadow: 0 2px 10px var(--shadow-color);
     min-height: 95px;
     /* Adjusted for 75px logo + padding */
 }
 
 .navbar.bg-dark-green {
-    background-color: var(--primary-green) !important;
+    background-color: #ffffff !important;
 }
 
 .navbar-brand {
@@ -130,8 +130,38 @@ p {
     /* Ensure logo is always visible */
 }
 
+/* ===== NAVBAR TOGGLER (Hamburger Menu) STYLING ===== */
+.navbar-toggler {
+    border: 2px solid var(--primary-green) !important;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    background-color: transparent;
+    transition: var(--transition-smooth);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(45, 80, 22, 0.25) !important;
+    border-color: var(--light-green) !important;
+}
+
+.navbar-toggler:hover {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green) !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2845, 80, 22, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 1.5em;
+    height: 1.5em;
+    transition: var(--transition-smooth);
+}
+
 .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: #000000 !important;
     font-weight: 500;
     margin-left: 1.5rem;
     position: relative;
@@ -160,6 +190,7 @@ p {
 }
 
 @media (max-width: 991px) {
+
     .navbar-nav .nav-link {
         margin-left: 0;
         padding: 0.5rem 0;
@@ -168,6 +199,32 @@ p {
     .navbar {
         min-height: 85px;
         /* Adjusted for mobile */
+    }
+
+    /* Mobile menu styling */
+    .navbar-collapse {
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 15px var(--shadow-color);
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        margin-bottom: 0.25rem;
+        transition: var(--transition-smooth);
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: var(--light-beige);
+        color: var(--primary-green) !important;
+    }
+
+    .navbar-nav .nav-link.active {
+        background-color: var(--light-green);
+        color: #ffffff !important;
     }
 }
 
@@ -191,7 +248,7 @@ p {
 
 /* ===== Navbar after scroll ===== */
 .navbar-scrolled {
-    background: var(--primary-green) !important;
+    background: #ffffff !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     min-height: 85px;
     /* Slightly smaller when scrolled */
@@ -200,7 +257,7 @@ p {
 }
 
 .navbar-scrolled .nav-link {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #000000 !important;
 }
 
 .navbar-scrolled .nav-link:hover,
@@ -431,9 +488,10 @@ p {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #5cb85c 0%, #90EE90 50%, #5cb85c 100%);
+    background: linear-gradient(135deg, #ff3700 0%, #ed734e 50%, #ff3700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 800;
     background-clip: text;
     animation: gradientShift 3s ease infinite;
 }
@@ -442,14 +500,14 @@ p {
 
     0%,
     100% {
-        background: linear-gradient(135deg, #5cb85c 0%, #90EE90 50%, #5cb85c 100%);
+        background: linear-gradient(135deg, #ff3700 0%, #ed734e 50%, #ff3700 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     50% {
-        background: linear-gradient(135deg, #90EE90 0%, #5cb85c 50%, #90EE90 100%);
+        background: linear-gradient(135deg, #ed734e 0%, #ff3700 50%, #ed734e 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

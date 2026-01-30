@@ -23,7 +23,7 @@
 
 <body>
     <!-- ==================== HEADER / NAVBAR ==================== -->
-    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="assets/image/logo.jpg" alt="Eknath Logo" class="logo-nav">
@@ -81,37 +81,34 @@
 
                         <form id="contactForm" class="contact-form">
                             <div class="row">
-                                <div class="col-md-6">
                                     <div class="form-floating fade-in-left" style="animation-delay: 0.2s;">
-                                        <input type="text" class="form-control" id="firstName" name="firstName"
-                                            placeholder="First Name" required>
-                                        <label for="firstName"><i class="fas fa-user me-2"></i>First Name</label>
+                                        <input type="text" class="form-control" id="firmName" name="firmName"
+                                            placeholder="Firm Name" required>
+                                        <label for="firmName"><i class="fas fa-building me-2"></i>Firm Name</label>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating fade-in-right" style="animation-delay: 0.2s;">
-                                        <input type="text" class="form-control" id="lastName" name="lastName"
-                                            placeholder="Last Name" required>
-                                        <label for="lastName"><i class="fas fa-user me-2"></i>Last Name</label>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-floating fade-in-left" style="animation-delay: 0.4s;">
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Email Address" required>
-                                        <label for="email"><i class="fas fa-envelope me-2"></i>Email Address</label>
+                                    <div class="form-floating fade-in-right" style="animation-delay: 0.2s;">
+                                        <input type="text" class="form-control" id="gstNo" name="gstNo"
+                                            placeholder="GST Number">
+                                        <label for="gstNo"><i class="fas fa-file-invoice me-2"></i>GST Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating fade-in-right" style="animation-delay: 0.4s;">
-                                        <input type="tel" class="form-control" id="phone" name="phone"
-                                            placeholder="Phone Number">
-                                        <label for="phone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                                    <div class="form-floating fade-in-left" style="animation-delay: 0.4s;">
+                                        <input type="tel" class="form-control" id="contactNo" name="contactNo"
+                                            placeholder="Contact Number" required>
+                                        <label for="contactNo"><i class="fas fa-phone me-2"></i>Contact Number</label>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="form-floating fade-in-right" style="animation-delay: 0.4s;">
+                                <textarea class="form-control" id="address" name="address" placeholder="Address"
+                                        style="height: 100px;" required></textarea>
+                                <label for="address"><i class="fas fa-map-marker-alt me-2"></i>Address</label>
                             </div>
 
                             <div class="form-floating fade-in-up" style="animation-delay: 0.8s;">
@@ -150,8 +147,8 @@
             </div>
 
             <!-- Contact Information Cards - 3 Card Layout -->
-            <div class="row g-4 justify-content-center">
-                <!-- Combined Call & WhatsApp Card -->
+            <!-- Combined Call & WhatsApp Card -->
+            <!-- <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
                     <a href="https://wa.me/918141061247" target="_blank" class="card-link">
                         <div class="contact-info-card primary-contact-card phone-whatsapp-card">
@@ -170,10 +167,10 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> -->
 
-                <!-- Email Card -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.4s;">
+            <!-- Email Card -->
+            <!-- <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.4s;">
                     <a href="mailto:eknathcropscience@gmail.com" class="card-link">
                         <div class="contact-info-card primary-contact-card email-card">
                             <div class="contact-info-icon primary-icon">
@@ -192,51 +189,50 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> -->
 
-                <!-- Location Card -->
-                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.6s;">
-                    <a href="#map" class="card-link">
-                        <div class="contact-info-card primary-contact-card location-card">
-                            <div class="contact-info-icon primary-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h3 class="contact-info-title primary-title">Visit Our Office</h3>
-                            <p class="contact-info-text">Come for personalized agricultural consultations</p>
-                            <div class="contact-details">
-                                <div class="address-info">
-                                    <i class="fas fa-map-marker-alt me-2"></i>
-                                    <span>Plot No. 4, Shreenathji Estate<br>Sabalpur Chowkdi<br>Junagadh - 362037</span>
-                                </div>
-                                <a href="#map" class="contact-info-link primary-link" onclick="event.stopPropagation();">
-                                    <i class="fas fa-directions me-2"></i>Get Directions
-                                </a>
-                            </div>
+            <!-- Location Card -->
+            <div class="col-lg col-md- fade-in-up" style="animation-delay: 0.6s;">
+                <a href="#map" class="card-link">
+                    <div class="contact-info-card primary-contact-card location-card">
+                        <div class="contact-info-icon primary-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Quick Contact Actions -->
-            <div class="row mt-5">
-                <div class="col-12 text-center fade-in-up" style="animation-delay: 1.2s;">
-                    <div class="quick-contact-actions">
-                        <h5 class="quick-contact-title">Need Immediate Assistance?</h5>
-                        <div class="quick-contact-buttons">
-                            <a href="tel:+918141061247" class="btn btn-primary btn-lg me-3 mb-2">
-                                <i class="fas fa-phone me-2"></i>Call Now
-                            </a>
-                            <a href="https://wa.me/918141061247" class="btn btn-success btn-lg me-3 mb-2"
-                                target="_blank">
-                                <i class="fab fa-whatsapp me-2"></i>WhatsApp
-                            </a>
-                            <a href="mailto:eknathcropscience@gmail.com" class="btn btn-outline-primary btn-lg mb-2">
-                                <i class="fas fa-envelope me-2"></i>Send Email
+                        <h3 class="contact-info-title primary-title">Visit Our Office</h3>
+                        <p class="contact-info-text">Come for personalized agricultural consultations</p>
+                        <div class="contact-details align-items-center justify-content-center">
+                            <div class="address-info">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span>Plot No. 4, Shreenathji Estate<br>Sabalpur Chowkdi<br>Junagadh - 362037</span>
+                            </div>
+                            <a href="#map" class="contact-info-link primary-link" onclick="event.stopPropagation();">
+                                <i class="fas fa-directions me-2"></i>Get Directions
                             </a>
                         </div>
                     </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Contact Actions -->
+        <div class="row mt-5">
+            <div class="col-12 text-center fade-in-up" style="animation-delay: 1.2s;">
+                <div class="quick-contact-actions">
+                    <h5 class="quick-contact-title">Need Immediate Assistance?</h5>
+                    <div class="quick-contact-buttons">
+                        <a href="tel:+918141061247" class="btn btn-primary btn-lg me-3 mb-2">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                        <a href="https://wa.me/918141061247" class="btn btn-success btn-lg me-3 mb-2" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                        <a href="mailto:eknathcropscience@gmail.com" class="btn btn-outline-primary btn-lg mb-2">
+                            <i class="fas fa-envelope me-2"></i>Send Email
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -263,7 +259,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer bg-dark-green text-light py-5">
@@ -347,18 +343,19 @@
             <!-- Footer Bottom -->
             <hr class="footer-divider my-4">
             <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
                     <p class="footer-copyright mb-0">
                         &copy; 2024 Eknath Crop Science. All rights reserved.
                     </p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
+
+                <!-- <div class="col-md-6 text-center text-md-end">
                     <div class="footer-legal-links">
                         <a href="#privacy" class="legal-link me-3">Privacy Policy</a>
                         <a href="#terms" class="legal-link me-3">Terms of Service</a>
                         <a href="#cookies" class="legal-link">Cookie Policy</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

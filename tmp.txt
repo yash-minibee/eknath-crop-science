@@ -1,0 +1,192 @@
+    <!-- ==================== RECENT REVIEWS SECTION ==================== -->
+    <section class="py-5 py-md-6">
+        <div class="container">
+            <div class="text-center mb-5 fade-in-down">
+                <h2 class="section-title mb-3">Recent Reviews</h2>
+                <p class="section-subtitle">See what other farmers are saying about this product</p>
+            </div>
+
+            <!-- Reviews Grid - Responsive Layout -->
+            <div class="row g-4">
+                <!-- Review Card 1 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Rajesh Patel</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Excellent results with my wheat crop. Increased yield by 35% and the grain quality was outstanding. Highly recommend this NPK fertilizer."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>2 weeks ago
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Priya Sharma</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Great product for vegetable farming. My tomatoes grew healthier and the harvest was much better than previous seasons."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>1 month ago
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Amit Kumar</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Perfect balanced nutrition for my cotton crop. Easy to apply and the results were visible within weeks. Will definitely use again."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>3 weeks ago
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Review Card 4 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 0.8s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Sunita Devi</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Good quality fertilizer. My rice crop showed significant improvement in growth and the grains were well-filled."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>1 week ago
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Review Card 5 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 1.0s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Vikram Singh</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Outstanding results with my fruit orchard. The mangoes were of premium quality with excellent color and taste."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>2 months ago
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Review Card 6 - Dynamic content -->
+                <div class="col-lg-4 col-md-6 fade-in-up" style="animation-delay: 1.2s;">
+                    <div class="highlight-card h-100">
+                        <!-- Reviewer Info -->
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                 style="width: 50px; height: 50px;">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Ramesh Gupta</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review Text -->
+                        <p class="text-muted">
+                            "Very effective for my sugarcane crop. The plants grew stronger and the sugar content was higher than expected."
+                        </p>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar me-1"></i>5 days ago
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
